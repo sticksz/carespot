@@ -1,0 +1,29 @@
+/* PageHeader: gradient title banner for inner pages (padding-top clears the fixed navbar). */
+.page-header {
+  padding: calc(var(--header-h) + 3rem) 0 3rem;
+  background: linear-gradient(135deg,var(--navy),#16507a);
+  color: #dbe8f3;
+}
+
+.page-header h1 {
+  color: #fff;
+  font-size: clamp(1.9rem,4.5vw,2.8rem);
+  margin: .3rem 0 .6rem;
+}
+
+.page-header p {
+  max-width: 560px;
+}
+
+.crumb {
+  font-size: .85rem;
+  opacity: .85;
+}
+
+.crumb a {
+  color: #7fe0df;
+}
+
+.crumb a:hover {
+  text-decoration: underline;
+}

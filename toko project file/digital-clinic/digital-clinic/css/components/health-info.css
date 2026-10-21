@@ -1,0 +1,17 @@
+/* Health Info section layout: accordion on one side, BMI on the other. */
+.info__grid {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.info {
+  background: var(--bg);
+}
+
+@media (max-width:900px) {
+  .info__grid {
+    grid-template-columns: 1fr;
+  }
+}

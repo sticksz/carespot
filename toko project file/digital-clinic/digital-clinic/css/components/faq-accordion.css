@@ -1,0 +1,46 @@
+/* Health tips accordion (open/close panels). */
+.acc-item {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: .8rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.acc-head {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.acc-head::after {
+  content: '+';
+  color: var(--primary);
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: transform .3s;
+}
+
+.acc-item.open .acc-head::after {
+  transform: rotate(45deg);
+}
+
+.acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease;
+  padding: 0 1.2rem;
+}
+
+.acc-item.open .acc-body {
+  padding-bottom: 1rem;
+}

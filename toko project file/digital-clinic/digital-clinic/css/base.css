@@ -1,0 +1,76 @@
+/* Design tokens (CSS variables), reset and layout helpers shared by every component.
+   Change --primary here to rebrand the whole site. */
+:root {
+  --primary: #0ea5a4;
+  --primary-dark: #0b7f7e;
+  --navy: #0f2a43;
+  --text: #4a5a6a;
+  --bg: #f4f9fa;
+  --white: #fff;
+  --danger: #d64545;
+  --ok: #1b9a5a;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(15,42,67,.08);
+  --header-h: 68px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+}
+
+body {
+  font-family: 'Segoe UI',system-ui,Arial,sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(1120px,92%);
+  margin: auto;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .8rem;
+}
+
+.title {
+  color: var(--navy);
+  font-size: clamp(1.6rem,3.5vw,2.3rem);
+  margin: .3rem 0 1.4rem;
+  line-height: 1.25;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+}

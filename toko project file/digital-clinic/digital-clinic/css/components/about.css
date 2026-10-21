@@ -1,0 +1,48 @@
+/* About section: highlight box and checklist. */
+.about__grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about__box {
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.about__box span {
+  font-size: 3rem;
+}
+
+.about__box h3 {
+  font-size: 1.8rem;
+}
+
+.checklist {
+  margin-top: 1rem;
+}
+
+.checklist li {
+  padding-left: 1.8rem;
+  position: relative;
+  margin: .4rem 0;
+}
+
+.checklist li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+@media (max-width:900px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+}

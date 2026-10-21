@@ -1,0 +1,23 @@
+/* Scroll-reveal animation. Elements with .reveal fade up when Utils.observeReveal() adds .visible. */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s,transform .7s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  * {
+    animation: none!important;
+    transition: none!important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

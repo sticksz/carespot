@@ -1,0 +1,23 @@
+/* Floating back-to-top button. */
+.to-top {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+  z-index: 90;
+}
+
+.to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}

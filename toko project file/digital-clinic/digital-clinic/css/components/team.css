@@ -1,0 +1,65 @@
+/* Team: centered, wrapping row of doctor cards with initials avatars (a lone last card stays centered). */
+.team__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.team__grid .doctor {
+  flex: 0 1 230px;
+}
+
+.doctor {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.2rem;
+  text-align: center;
+  transition: .3s;
+}
+
+.doctor:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+  background: #fff;
+}
+
+.doctor__avatar,.doctor__photo {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto .8rem;
+  border-radius: 50%;
+}
+
+.doctor__avatar {
+  background: linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.doctor__photo {
+  display: block;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.doctor h3 {
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+.doctor__link {
+  display: inline-block;
+  margin-top: .7rem;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+.doctor__link:hover {
+  text-decoration: underline;
+}

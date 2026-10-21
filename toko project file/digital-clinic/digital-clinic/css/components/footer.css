@@ -1,0 +1,38 @@
+/* Footer columns and copyright bar. */
+.footer {
+  background: var(--navy);
+  color: #c3d0dc;
+  padding-top: 3.5rem;
+}
+
+.footer .logo {
+  color: #fff;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 2rem;
+}
+
+.footer h4 {
+  color: #fff;
+  margin-bottom: .8rem;
+}
+
+.footer a {
+  display: block;
+  margin: .3rem 0;
+}
+
+.footer a:hover {
+  color: var(--primary);
+}
+
+.footer__copy {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2.5rem;
+  border-top: 1px solid rgba(255,255,255,.1);
+  font-size: .85rem;
+}

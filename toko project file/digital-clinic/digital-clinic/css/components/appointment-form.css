@@ -1,0 +1,40 @@
+/* Booking form fields, inline errors and status message. */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field.invalid input,.field.invalid select {
+  border-color: var(--danger);
+}
+
+.error {
+  color: var(--danger);
+  font-size: .8rem;
+  display: block;
+  min-height: 1rem;
+}
+
+form .btn {
+  margin-top: 1rem;
+}
+
+.form-msg {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.form-msg.ok {
+  color: var(--ok);
+}
+
+.form-msg.bad {
+  color: var(--danger);
+}
+
+@media (max-width:520px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,39 @@
+/* CtaBanner: teal strip with text on the left and a light button on the right. */
+.cta {
+  padding: 3rem 0;
+}
+
+.cta__box {
+  background: linear-gradient(120deg,var(--primary),var(--primary-dark));
+  color: #fff;
+  border-radius: 20px;
+  padding: 2.2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+}
+
+.cta h2 {
+  margin-bottom: .3rem;
+}
+
+.cta .btn--light {
+  background: #fff;
+  color: var(--primary-dark);
+  border-color: #fff;
+}
+
+.cta .btn--light:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+@media (max-width:600px) {
+  .cta__box {
+    padding: 1.6rem;
+  }
+}

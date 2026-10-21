@@ -1,0 +1,40 @@
+/* "My Appointments" side panel. */
+.my-appts {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.my-appts h3 {
+  color: var(--navy);
+  margin-bottom: 1rem;
+}
+
+.my-appts li {
+  background: #fff;
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  padding: .8rem;
+  margin-bottom: .8rem;
+  font-size: .9rem;
+  position: relative;
+}
+
+.my-appts li strong {
+  color: var(--navy);
+  display: block;
+}
+
+.cancel {
+  margin-top: .4rem;
+  background: none;
+  border: 0;
+  color: var(--danger);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.empty {
+  font-size: .9rem;
+}

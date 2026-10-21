@@ -1,0 +1,86 @@
+/* Home/hero section: headline, call-to-action buttons, stats and floating cross graphic. */
+.home {
+  padding: calc(var(--header-h) + 4rem) 0 4rem;
+  background: linear-gradient(135deg,rgba(230,247,247,.88),rgba(244,249,250,.82)),url("../../images/Hospital background.jpg") center/cover no-repeat;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.home h1 {
+  color: var(--navy);
+  font-size: clamp(2rem,5vw,3.3rem);
+  line-height: 1.15;
+  margin: .6rem 0 1rem;
+}
+
+.home h1 span {
+  color: var(--primary);
+}
+
+.home__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.6rem 0;
+}
+
+.stats {
+  display: flex;
+  gap: 2.2rem;
+  margin-top: 1.5rem;
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--navy);
+}
+
+.stats span {
+  font-size: .9rem;
+}
+
+.pulse-card {
+  width: min(340px,80%);
+  aspect-ratio: 1;
+  margin: auto;
+  color: var(--primary);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@media (max-width:900px) {
+  .home__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home__visual {
+    order: -1;
+  }
+
+  .pulse-card {
+    width: 200px;
+  }
+}
+
+@media (max-width:520px) {
+  .stats {
+    gap: 1.2rem;
+  }
+}
