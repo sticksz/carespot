@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/html/index.html" },
+    { "source": "/index.html", "destination": "/html/index.html" },
+    { "source": "/about.html", "destination": "/html/about.html" },
+    { "source": "/account.html", "destination": "/html/account.html" },
+    { "source": "/admin.html", "destination": "/html/admin.html" },
+    { "source": "/appointment.html", "destination": "/html/appointment.html" },
+    { "source": "/health-info.html", "destination": "/html/health-info.html" },
+    { "source": "/services.html", "destination": "/html/services.html" }
+  ]
+}

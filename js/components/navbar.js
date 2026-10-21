@@ -17,6 +17,7 @@ const Navbar = {
         <a href="index.html" class="logo">Care<span>Spot</span></a>
         <ul class="nav__menu" id="nav-menu">
           ${links}
+          <li><a href="account.html" class="nav__link${current === 'account.html' ? ' active' : ''}">My account</a></li>
           <li><a href="appointment.html" class="nav__link nav__cta">Book Now</a></li>
         </ul>
         <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">

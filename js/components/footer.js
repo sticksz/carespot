@@ -5,7 +5,7 @@ const Footer = {
     <footer class="footer">
       <div class="container footer__grid">
         <div><a href="index.html" class="logo">Care<span>Spot</span></a><p>Compassionate, convenient healthcare.</p></div>
-        <div><h4>Quick links</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="health-info.html">Health Info</a><a href="appointment.html">Book</a></div>
+        <div><h4>Quick links</h4><a href="about.html">About</a><a href="services.html">Services</a><a href="health-info.html">Health Info</a><a href="appointment.html">Book</a><a href="admin.html">Doctor Login</a></div>
         <div><h4>Contact</h4><p>📍 Biu, Borno State</p><p>📞 +234 9161282666</p><p>carespot001@gmail.com</p></div>
         <div><h4>Hours</h4><p>Mon–Fri: 8am – 6pm</p><p>Sat: 9am – 2pm</p><p>Emergency: 24/7</p></div>
       </div>

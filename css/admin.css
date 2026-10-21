@@ -1,0 +1,140 @@
+.admin {
+  min-height: calc(100vh - 68px);
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
+
+.admin__panel {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.admin__login {
+  max-width: 440px;
+}
+
+.admin__message {
+  min-height: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.admin__message--error {
+  color: var(--danger);
+}
+
+.admin__message--success {
+  color: var(--ok);
+}
+
+.admin__notice {
+  margin-bottom: 1rem;
+}
+
+.admin__dashboard[hidden],
+.admin__login[hidden] {
+  display: none;
+}
+
+.admin__toolbar,
+.booking-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.admin__toolbar {
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.admin__toolbar .btn {
+  margin: 0;
+}
+
+.admin__bookings {
+  display: grid;
+  gap: 1rem;
+}
+
+.booking-card {
+  padding: 1.5rem;
+  background: var(--bg);
+  border-radius: var(--radius);
+}
+
+.booking-card h3 {
+  color: var(--navy);
+}
+
+.booking-card__status {
+  padding: .25rem .7rem;
+  border-radius: 999px;
+  background: #e1e8ed;
+  color: var(--navy);
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.booking-card__status--confirmed {
+  background: #d9f2e4;
+  color: #17633a;
+}
+
+.booking-card__status--completed {
+  background: #dce8f8;
+  color: #244d83;
+}
+
+.booking-card__status--cancelled {
+  background: #f8dddd;
+  color: #8a2929;
+}
+
+.booking-card__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem 1.5rem;
+  margin: 1.25rem 0;
+}
+
+.booking-card__details dt {
+  color: var(--navy);
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.booking-card__details dd {
+  overflow-wrap: anywhere;
+}
+
+.booking-card__reason {
+  grid-column: 1 / -1;
+}
+
+.booking-card__status-select {
+  max-width: 240px;
+}
+
+.admin__empty {
+  padding: 1rem;
+  background: var(--bg);
+  border-radius: var(--radius);
+}
+
+.footer__copy {
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  .booking-card__details {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card__reason {
+    grid-column: auto;
+  }
+}

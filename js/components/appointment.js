@@ -1,4 +1,4 @@
-/* Appointment section: layout that composes AppointmentForm and AppointmentList. */
+/* Appointment section containing the patient account booking form. */
 const Appointment = {
   render() {
     return `
@@ -7,11 +7,11 @@ const Appointment = {
         <div class="reveal">
           <p class="eyebrow">Appointments</p>
           <h2 class="title">Book your visit</h2>
+          <p class="form-msg" id="appt-auth-msg" role="status" hidden></p>
           ${AppointmentForm.render()}
         </div>
-        ${AppointmentList.render()}
       </div>
     </section>`;
   },
-  init(root) { AppointmentForm.init(root); AppointmentList.init(root); }
+  init(root) { AppointmentForm.init(root); }
 };

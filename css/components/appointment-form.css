@@ -9,6 +9,10 @@
   border-color: var(--danger);
 }
 
+.field.invalid textarea {
+  border-color: var(--danger);
+}
+
 .error {
   color: var(--danger);
   font-size: .8rem;

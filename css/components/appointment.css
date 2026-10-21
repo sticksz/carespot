@@ -1,0 +1,8 @@
+/* Appointment section layout: form beside the appointment list. */
+.appt__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 760px);
+  justify-content: center;
+  gap: 2rem;
+  align-items: start;
+}
